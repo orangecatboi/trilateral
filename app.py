@@ -27,13 +27,21 @@ with app.app_context():
 def send_email(subject, body):
     msg = MIMEText(body)
     msg['Subject'] = subject
-    msg['From']    = os.getenv('EMAIL_ADDRESS')
-    msg['To']      = os.getenv('EMAIL_ADDRESS')
+    msg['From'] = os.getenv('EMAIL_ADDRESS')
+    msg['To'] = os.getenv('EMAIL_ADDRESS')
+    
     try:
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+        # 1. Use port 587 and add a 15-second timeout so Gunicorn never freezes
+        with smtplib.SMTP('smtp.gmail.com', 587, timeout=15) as smtp:
+            smtp.ehlo()
+            # 2. Explicitly upgrade the connection to secure TLS
+            smtp.starttls() 
             smtp.login(os.getenv('EMAIL_ADDRESS'), os.getenv('EMAIL_PASSWORD'))
             smtp.send_message(msg)
+            print("Email sent successfully!")
+            
     except Exception as e:
+        # If it fails, it will just print the error and keep the server alive
         print("Email error:", e)
 
 @app.route('/')
