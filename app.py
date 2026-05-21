@@ -13,6 +13,10 @@ app = Flask(__name__)
 # Fall back to your local SQLite file if DATABASE_URL isn't present in your env 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///trilateral.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+    "pool_pre_ping": True,   # Checks if connection is dead before sending queries
+    "pool_recycle": 300,     # Refreshes the connection pool every 5 minutes
+}
 
 db.init_app(app)
 
