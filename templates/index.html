@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilateral Consulting MEP Engineers | Goa & Maharashtra</title>
+<meta name="description" content="Trilateral Consulting MEP Engineers — Integrated Mechanical, Electrical & Plumbing design across Goa and Maharashtra. 40+ projects delivered.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --orange:#E85D24;--amber:#F2A623;--dark:#1a1a18;--ink:#2c2c28;
+  --muted:#6b6b66;--light:#f7f5f0;--white:#ffffff;--border:rgba(0,0,0,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--ink);font-size:15px;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Syne',sans-serif;font-weight:700}
+a{text-decoration:none}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;background:rgba(247,245,240,0.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:66px;padding:0 32px;gap:10px}
+.nav-logo{display:flex;align-items:center;gap:12px;height:48px;cursor:pointer;overflow:hidden}
+.nav-logo img{height:44px;width:auto;object-fit:contain}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{padding:7px 15px;border-radius:7px;color:var(--muted);font-size:13px;font-weight:500;transition:all .2s;cursor:pointer}
+.nav-links a:hover,.nav-links a.active{color:var(--dark);background:rgba(0,0,0,0.05)}
+.nav-links a.active{color:var(--orange)!important;background:rgba(232,93,36,0.08)!important}
+.nav-cta{background:var(--orange)!important;color:#fff!important;border-radius:8px!important;padding:9px 20px!important;font-weight:500!important}
+.nav-cta:hover{background:#c94e1a!important}
+.nav-cta.active{background:var(--orange)!important;color:#fff!important}
+
+.map-wrapper {
+  width: 100%;
+  max-width: 900px; /* Limits the max width on desktop screens */
+  margin: 30px auto; /* Centers the map and adds spacing above/below */
+  border-radius: 12px; /* Gives the map smooth, rounded corners */
+  overflow: hidden; /* Ensures the map follows the rounded border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+}
+
+/* ── HAMBURGER ── */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;z-index:101}
+.hamburger span{width:22px;height:2px;background:var(--dark);border-radius:2px;transition:all .25s;display:block}
+
+/* ── MOBILE MENU ── */
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--light);z-index:200;flex-direction:column;padding:88px 32px 40px;gap:4px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--dark);padding:16px 0;border-bottom:1px solid var(--border);cursor:pointer;transition:color .2s}
+.mobile-menu a:hover{color:var(--orange)}
+.mobile-menu a.nav-cta{background:var(--orange);color:#fff!important;border-radius:10px;padding:16px 20px;border:none;margin-top:16px;text-align:center;font-size:16px}
+.mobile-close{position:absolute;top:18px;right:24px;font-size:26px;background:none;border:none;cursor:pointer;color:var(--dark);line-height:1}
+
+/* ── SECTIONS ── */
+section{padding:84px 32px}
+.container{max-width:1140px;margin:0 auto}
+.sec-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(232,93,36,0.1);color:var(--orange);font-size:11px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+.sec-tag::before{content:'';width:5px;height:5px;background:var(--orange);border-radius:50%}
+.sec-title{font-size:clamp(26px,3.5vw,40px);color:var(--dark);line-height:1.12;margin-bottom:14px}
+.sec-sub{color:var(--muted);font-size:15px;line-height:1.75;max-width:520px}
+
+/* ── HERO ── */
+#hero{background:var(--dark);min-height:92vh;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(232,93,36,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(232,93,36,0.07) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+.hero-glow{position:absolute;top:-120px;left:-120px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,93,36,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1140px;margin:0 auto;padding:0 32px;flex:1;display:flex;align-items:center;gap:60px;position:relative;z-index:2}
+.hero-left{flex:1;padding:120px 0 80px}
+.hero-right{width:360px;flex-shrink:0;display:flex;flex-direction:column;gap:14px;padding:120px 0 80px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(232,93,36,0.3);border-radius:20px;padding:5px 14px;margin-bottom:28px;width:fit-content}
+.badge-dot{width:7px;height:7px;background:var(--orange);border-radius:50%;animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+.badge-text{color:rgba(255,255,255,0.65);font-size:12px;letter-spacing:.4px}
+h1.hero-h{font-family:'Syne',sans-serif;font-size:clamp(40px,5.5vw,70px);font-weight:800;color:#fff;line-height:1.04;letter-spacing:-2px;margin-bottom:22px}
+h1.hero-h .accent{color:var(--orange)}
+.hero-p{color:rgba(255,255,255,0.52);font-size:16px;max-width:500px;line-height:1.75;margin-bottom:36px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all .22s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:#c94e1a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,93,36,0.3)}
+.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.22)}
+.btn-outline:hover{border-color:rgba(255,255,255,0.5);background:rgba(255,255,255,0.07)}
+.hero-stats{display:flex;gap:36px;margin-top:56px;padding-top:36px;border-top:1px solid rgba(255,255,255,0.09);flex-wrap:wrap}
+.stat-num{font-family:'Syne',sans-serif;font-size:30px;font-weight:800;color:#fff;display:block;line-height:1}
+.stat-num em{color:var(--orange);font-style:normal}
+.stat-lbl{color:rgba(255,255,255,0.4);font-size:11px;letter-spacing:.3px;margin-top:4px}
+.service-pill{background:rgba(255,255,255,0.055);border:1px solid rgba(255,255,255,0.11);border-radius:12px;padding:16px 20px;display:flex;align-items:center;gap:14px;transition:all .25s}
+.service-pill:hover{background:rgba(255,255,255,0.09);border-color:rgba(232,93,36,0.3)}
+.pill-icon{width:36px;height:36px;background:rgba(232,93,36,0.18);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.pill-name{font-size:13px;color:rgba(255,255,255,0.8);font-weight:500}
+.pill-tag{font-size:11px;color:rgba(255,255,255,0.35);margin-top:2px}
+
+/* ── ABOUT HOME ── */
+#about-home{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-card{background:var(--dark);border-radius:18px;padding:36px;position:relative;overflow:hidden}
+.about-card::before{content:'';position:absolute;top:-60px;right:-60px;width:160px;height:160px;background:var(--orange);opacity:.1;border-radius:50%}
+.about-card::after{content:'';position:absolute;bottom:-30px;left:-30px;width:100px;height:100px;background:var(--amber);opacity:.09;border-radius:50%}
+.about-card-label{font-size:11px;color:rgba(255,255,255,0.4);letter-spacing:.6px;text-transform:uppercase;margin-bottom:22px}
+.exp-row{display:flex;align-items:center;gap:18px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.exp-row:last-child{border-bottom:none;padding-bottom:0}
+.exp-num{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--orange);min-width:52px}
+.exp-lbl{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5}
+.about-badge{position:absolute;bottom:-16px;right:28px;background:var(--orange);color:#fff;border-radius:12px;padding:12px 18px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;text-align:center;line-height:1.4;box-shadow:0 10px 28px rgba(232,93,36,0.38)}
+.about-copy p{color:var(--muted);margin-bottom:15px;line-height:1.8;font-size:14px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.pillar{background:var(--light);border-radius:9px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink);font-weight:500}
+.pillar-dot{width:7px;height:7px;background:var(--orange);border-radius:50%;flex-shrink:0}
+
+/* ── SERVICES ── */
+#services{background:var(--light)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:44px}
+.svc-card{background:#fff;border-radius:16px;padding:30px;border:1px solid var(--border);transition:all .3s;position:relative;overflow:hidden}
+.svc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--orange),var(--amber));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 24px 48px rgba(0,0,0,0.09)}
+.svc-card:hover::after{transform:scaleX(1)}
+.svc-num{font-size:11px;color:var(--orange);font-weight:700;letter-spacing:1.2px;opacity:.65;margin-bottom:16px}
+.svc-icon{font-size:28px;margin-bottom:14px;display:block}
+.svc-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--dark);margin-bottom:10px}
+.svc-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:18px}
+.svc-items{padding-top:16px;border-top:1px solid var(--border)}
+.svc-item{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:7px;padding:3px 0}
+.svc-item::before{content:'';width:4px;height:4px;background:var(--orange);border-radius:50%;flex-shrink:0}
+
+/* ── WORKFLOW ── */
+#workflow{background:#fff}
+.wf-steps{display:flex;position:relative;margin:48px 0 40px}
+.wf-steps::before{content:'';position:absolute;top:27px;left:48px;right:48px;height:1.5px;background:linear-gradient(90deg,var(--orange),var(--amber),var(--orange));opacity:.2}
+.wf-step{flex:1;text-align:center;position:relative;z-index:1;padding:0 6px}
+.wf-circle{width:54px;height:54px;background:#fff;border:2px solid var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-family:'Syne',sans-serif;font-weight:800;font-size:17px;color:var(--orange)}
+.wf-step:first-child .wf-circle{background:var(--orange);color:#fff}
+.wf-name{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--dark);margin-bottom:5px}
+.wf-desc{font-size:11px;color:var(--muted);line-height:1.5}
+.wf-deliverables{background:var(--light);border-radius:16px;padding:32px;border:1px solid var(--border)}
+.wf-del-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--dark);margin-bottom:20px}
+.wf-del-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.wf-del-card{background:#fff;border-radius:12px;padding:18px;border:1px solid var(--border)}
+.wf-del-name{font-size:13px;font-weight:600;color:var(--dark);margin-bottom:8px;display:flex;align-items:center;gap:7px}
+.wf-del-dot{width:7px;height:7px;background:var(--orange);border-radius:50%;flex-shrink:0}
+.wf-del-text{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* ── HOME PROJECTS STRIP ── */
+#projects-home{background:var(--dark)}
+#projects-home .sec-tag{background:rgba(232,93,36,0.18);color:var(--orange)}
+#projects-home .sec-title{color:#fff}
+#projects-home .sec-sub{color:rgba(255,255,255,0.48)}
+.proj-grid-home{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.proj-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);border-radius:14px;padding:22px;transition:all .28s}
+.proj-card:hover{background:rgba(255,255,255,0.09);transform:translateY(-3px);border-color:rgba(232,93,36,0.25)}
+.proj-type{font-size:10px;color:var(--orange);font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-bottom:9px}
+.proj-name{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;line-height:1.35}
+.proj-footer{display:flex;align-items:center;justify-content:space-between;margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.07)}
+.proj-loc{font-size:11px;color:rgba(255,255,255,0.38)}
+.proj-yr{font-size:10px;background:rgba(232,93,36,0.18);color:var(--orange);padding:2px 8px;border-radius:8px;font-weight:600}
+.home-proj-cta{text-align:center;margin-top:36px}
+
+/* ── WHY ── */
+#why{background:var(--light)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+.why-card{background:#fff;border-radius:14px;padding:26px;border:1px solid var(--border);transition:all .28s}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,0.07)}
+.why-icon{font-size:28px;margin-bottom:14px;display:block}
+.why-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--dark);margin-bottom:8px}
+.why-text{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* ── CONTACT ── */
+#contact-home{background:var(--dark)}
+#contact-home .sec-tag{background:rgba(232,93,36,0.18);color:var(--orange)}
+#contact-home .sec-title,.contact-page .sec-title{color:#fff}
+#contact-home .sec-sub{color:rgba(255,255,255,0.48)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:48px}
+.contact-items{display:flex;flex-direction:column;gap:22px}
+.ci{display:flex;align-items:flex-start;gap:16px}
+.ci-icon{width:44px;height:44px;background:rgba(232,93,36,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ci-label{font-size:11px;color:rgba(255,255,255,0.38);margin-bottom:4px}
+.ci-val{color:#fff;font-size:15px;font-weight:500}
+.ci-sub{font-size:12px;color:rgba(255,255,255,0.38);margin-top:2px}
+.form-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:32px}
+.form-title{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:#fff;margin-bottom:22px}
+.fg{margin-bottom:14px}
+.flabel{display:block;font-size:11px;color:rgba(255,255,255,0.45);margin-bottom:5px;letter-spacing:.25px}
+.finput{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:9px;padding:11px 15px;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;transition:border-color .2s;-webkit-appearance:none}
+.finput:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,0.09)}
+.finput::placeholder{color:rgba(255,255,255,0.22)}
+.finput option{background:#2a2824;color:#fff}
+textarea.finput{resize:vertical;min-height:88px}
+.fgrid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fsub{width:100%;background:var(--orange);color:#fff;border:none;padding:13px;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:all .22s;margin-top:6px}
+.fsub:hover{background:#c94e1a;transform:translateY(-1px)}
+.fsub:disabled{opacity:.6;cursor:not-allowed;transform:none}
+
+/* ── FOOTER ── */
+footer{background:#111;padding:26px 32px;border-top:1px solid rgba(255,255,255,0.05)}
+.footer-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:rgba(255,255,255,0.5)}
+.footer-logo span{color:var(--orange)}
+.footer-copy{color:rgba(255,255,255,0.25);font-size:11px}
+.footer-links{display:flex;gap:20px}
+.footer-links a{color:rgba(255,255,255,0.28);font-size:11px;text-decoration:none;cursor:pointer;transition:color .2s}
+.footer-links a:hover{color:rgba(255,255,255,0.65)}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:28px;right:28px;background:var(--dark);color:#fff;border-radius:12px;padding:14px 20px;font-size:14px;border-left:4px solid var(--orange);transform:translateY(70px);opacity:0;transition:all .3s ease;z-index:9999;max-width:300px;pointer-events:none}
+.toast.show{transform:none;opacity:1}
+
+/* ── PAGE HERO BANNER ── */
+.page-hero{background:var(--dark);padding:80px 32px 72px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(232,93,36,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(232,93,36,0.06) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+.page-hero-inner{max-width:1140px;margin:0 auto;position:relative;z-index:1}
+.page-hero-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(232,93,36,0.2);color:var(--orange);font-size:11px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:16px}
+.page-hero-tag::before{content:'';width:5px;height:5px;background:var(--orange);border-radius:50%}
+.page-hero-h{font-family:'Syne',sans-serif;font-size:clamp(32px,5vw,58px);font-weight:800;color:#fff;line-height:1.08;letter-spacing:-1.5px;margin-bottom:16px}
+.page-hero-h span{color:var(--orange)}
+.page-hero-p{color:rgba(255,255,255,0.5);font-size:16px;max-width:560px;line-height:1.75}
+.page-hero-stats{display:flex;gap:36px;margin-top:44px;padding-top:36px;border-top:1px solid rgba(255,255,255,0.09);flex-wrap:wrap}
+
+/* ════════════════════════════════════════
+   PAGE: ABOUT / TEAM
+════════════════════════════════════════ */
+#page-about{display:none}
+img{border-radius:0}
+.profile-img{border-radius:45%;display:block;transform:scale(1.2)}
+.about-page-story{background:#fff;padding:80px 32px}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.story-text p{color:var(--muted);margin-bottom:18px;line-height:1.85;font-size:14px}
+.story-text h3{font-family:'Syne',sans-serif;font-size:22px;color:var(--dark);margin-bottom:16px}
+.story-values{display:grid;grid-template-columns:1fr;gap:12px;margin-top:8px}
+.value-item{display:flex;align-items:flex-start;gap:14px;background:var(--light);border-radius:12px;padding:16px 18px}
+.value-num{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--orange);min-width:36px;line-height:1}
+.value-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.value-desc{font-size:12px;color:var(--muted);line-height:1.6}
+.story-visual{position:sticky;top:80px}
+.story-card{background:var(--dark);border-radius:20px;padding:32px;margin-bottom:16px}
+.story-card-label{font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:.6px;margin-bottom:18px}
+.timeline-item{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.timeline-item:last-child{border-bottom:none}
+.tl-year{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--orange);min-width:52px}
+.tl-desc{font-size:12px;color:rgba(255,255,255,0.6);line-height:1.5}
+
+/* TEAM SECTION */
+.team-page{background:var(--light);padding:80px 32px}
+.team-page-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.team-full-card{background:#fff;border-radius:24px;padding:36px;border:1.5px solid var(--border);transition:all .3s}
+.team-full-card:hover{border-color:var(--orange);box-shadow:0 20px 48px rgba(232,93,36,0.1)}
+.team-full-name{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--dark);margin-bottom:4px;margin-top:16px}
+.team-full-role{font-size:12px;color:var(--orange);font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-bottom:8px}
+.team-full-exp{display:inline-flex;align-items:center;gap:6px;background:rgba(232,93,36,0.08);border-radius:6px;padding:5px 12px;font-size:12px;color:var(--orange);font-weight:600;margin-bottom:18px}
+.team-full-bio{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.team-expertise-title{font-size:11px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+.team-expertise-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.expertise-item{background:var(--light);border-radius:8px;padding:10px 12px;font-size:12px;color:var(--ink);font-weight:500;display:flex;align-items:center;gap:8px}
+.expertise-dot{width:6px;height:6px;background:var(--orange);border-radius:50%;flex-shrink:0}
+.team-sectors{margin-top:18px}
+.team-sectors-title{font-size:11px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+.sector-tags{display:flex;flex-wrap:wrap;gap:6px}
+.sector-tag{font-size:11px;background:#fff;border:1px solid var(--border);border-radius:6px;padding:4px 10px;color:var(--muted)}
+
+/* ════════════════════════════════════════
+   PAGE: PROJECTS PORTFOLIO
+════════════════════════════════════════ */
+#page-projects{display:none}
+.portfolio-section{background:var(--light);padding:60px 32px}
+.proj-filters-full{display:flex;gap:8px;margin:32px 0 24px;flex-wrap:wrap}
+.filt-btn{padding:8px 18px;border-radius:20px;border:1px solid var(--border);background:#fff;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer;transition:all .2s;font-weight:500}
+.filt-btn.active,.filt-btn:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+.proj-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.proj-full-card{background:#fff;border-radius:14px;padding:24px;border:1px solid var(--border);transition:all .28s}
+.proj-full-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.08);border-color:rgba(232,93,36,0.2)}
+.proj-full-type{font-size:10px;color:var(--orange);font-weight:700;letter-spacing:.6px;text-transform:uppercase;margin-bottom:10px}
+.proj-full-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px;line-height:1.3}
+.proj-full-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
+.proj-full-loc{font-size:11px;color:var(--muted)}
+.proj-full-yr{font-size:11px;background:rgba(232,93,36,0.1);color:var(--orange);padding:3px 9px;border-radius:8px;font-weight:600}
+.proj-count{font-size:13px;color:var(--muted);margin-bottom:20px}
+.proj-count strong{color:var(--dark);font-weight:600}
+
+/* PARTNERS SECTION */
+.partners-section{background:var(--dark);padding:72px 32px}
+.partners-section .sec-tag{background:rgba(232,93,36,0.18);color:var(--orange)}
+.partners-section .sec-title{color:#fff}
+.partners-section .sec-sub{color:rgba(255,255,255,0.48)}
+.partners-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px}
+.partner-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px 20px;display:flex;flex-direction:column;align-items:center;gap:16px;transition:all .3s;text-align:center}
+.partner-card:hover{background:rgba(255,255,255,0.1);border-color:rgba(232,93,36,0.3);transform:translateY(-4px)}
+.partner-logo-wrap{width:80px;height:60px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.08);border-radius:10px;padding:8px;flex-shrink:0}
+.partner-logo-wrap img{width:100%;height:100%;object-fit:contain;filter:brightness(0) invert(1);opacity:.8;transition:opacity .2s;border-radius:0!important}
+.partner-card:hover .partner-logo-wrap img{opacity:1}
+.partner-name{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:#fff;line-height:1.3}
+.partner-desc{font-size:11px;color:rgba(255,255,255,0.4);line-height:1.5}
+.partner-sector{font-size:10px;background:rgba(232,93,36,0.18);color:var(--orange);padding:3px 9px;border-radius:8px;font-weight:600;margin-top:2px}
+.partners-note{text-align:center;margin-top:36px;color:rgba(255,255,255,0.3);font-size:13px}
+
+/* ════════════════════════════════════════
+   PAGE: CAREERS
+════════════════════════════════════════ */
+#page-careers{display:none}
+.careers-section{background:var(--light);padding:72px 32px}
+.careers-grid{display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:start}
+.job-list{display:flex;flex-direction:column;gap:16px}
+.job-card{background:#fff;border-radius:16px;padding:28px 32px;border:1px solid var(--border);transition:all .3s;cursor:pointer}
+.job-card:hover{border-color:var(--orange);box-shadow:0 16px 36px rgba(232,93,36,0.08)}
+.job-card.featured{border-color:var(--orange);background:linear-gradient(135deg,rgba(232,93,36,0.03),rgba(242,166,35,0.02))}
+.job-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:12px}
+.job-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.job-type-badge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.badge-full{background:rgba(232,93,36,0.1);color:var(--orange)}
+.badge-intern{background:rgba(242,166,35,0.12);color:#b07400}
+.badge-contract{background:rgba(26,26,24,0.07);color:var(--muted)}
+.job-dept{font-size:12px;color:var(--orange);font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+.job-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+.job-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.job-tag{font-size:11px;background:var(--light);border:1px solid var(--border);border-radius:6px;padding:3px 10px;color:var(--muted)}
+.job-footer{display:flex;align-items:center;justify-content:space-between}
+.job-loc{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px}
+.apply-btn{background:var(--orange);color:#fff;border:none;padding:9px 20px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
+.apply-btn:hover{background:#c94e1a;transform:translateY(-1px)}
+
+/* APPLY FORM SIDEBAR */
+.careers-sidebar{position:sticky;top:80px}
+.apply-form-card{background:#fff;border-radius:20px;padding:32px;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,0.06)}
+.apply-form-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--dark);margin-bottom:6px}
+.apply-form-sub{font-size:13px;color:var(--muted);margin-bottom:24px}
+.fg-light{margin-bottom:14px}
+.flabel-dark{display:block;font-size:11px;color:var(--muted);margin-bottom:5px;letter-spacing:.25px;font-weight:500}
+.finput-light{width:100%;background:var(--light);border:1px solid var(--border);border-radius:9px;padding:11px 15px;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:14px;transition:border-color .2s;-webkit-appearance:none}
+.finput-light:focus{outline:none;border-color:var(--orange);background:#fff}
+textarea.finput-light{resize:vertical;min-height:80px}
+.fsub-dark{width:100%;background:var(--orange);color:#fff;border:none;padding:13px;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:all .22s;margin-top:6px}
+.fsub-dark:hover{background:#c94e1a;transform:translateY(-1px)}
+.fsub-dark:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.why-join{background:var(--dark);border-radius:16px;padding:24px;margin-top:16px}
+.why-join-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#fff;margin-bottom:14px}
+.why-join-item{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:12px;color:rgba(255,255,255,0.6)}
+.why-join-item:last-child{border-bottom:none}
+.why-join-dot{width:6px;height:6px;background:var(--orange);border-radius:50%;flex-shrink:0}
+
+/* CULTURE STRIP */
+.culture-strip{background:#fff;padding:60px 32px;border-top:1px solid var(--border)}
+.culture-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.culture-card{text-align:center;padding:24px 16px}
+.culture-icon{font-size:32px;margin-bottom:12px;display:block}
+.culture-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--dark);margin-bottom:6px}
+.culture-text{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* ── FADE ANIMATION ── */
+.fade-up{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .about-grid,.story-grid,.team-page-grid,.contact-grid,.wf-del-grid,.why-grid,.careers-grid{grid-template-columns:1fr}
+  .services-grid,.proj-full-grid,.proj-grid-home,.culture-grid{grid-template-columns:1fr 1fr}
+  .partners-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-inner{flex-direction:column}
+  .hero-right{width:100%;padding:0 0 60px}
+  .hero-left{padding:80px 0 0}
+  .wf-steps{flex-direction:column;gap:20px}
+  .wf-steps::before{display:none}
+  section{padding:60px 20px}
+  .page-hero{padding:60px 20px 52px}
+  nav .nav-inner{padding:0 20px}
+  .fgrid2{grid-template-columns:1fr}
+  .nav-links a:not(.nav-cta){display:none}
+  .nav-links .nav-cta{display:none}
+  .hamburger{display:flex}
+  .careers-sidebar{position:static}
+}
+@media(max-width:600px){
+  .services-grid,.proj-full-grid,.proj-grid-home,.culture-grid{grid-template-columns:1fr}
+  .partners-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <img src="{{ url_for('static', filename='images/logonew.svg') }}" alt="Trilateral">
+    </div>
+    <div class="nav-links">
+      <a id="nav-home" onclick="showPage('home')" class="active">Home</a>
+      <a id="nav-about" onclick="showPage('about')">About</a>
+      <a id="nav-projects" onclick="showPage('projects')">Projects</a>
+      <a id="nav-careers" onclick="showPage('careers')">Careers</a>
+      <a id="nav-contact" onclick="showPage('contact')" class="nav-cta">Get in Touch &rarr;</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()" aria-label="Close menu">&#x2715;</button>
+  <a onclick="toggleMenu();showPage('home')">Home</a>
+  <a onclick="toggleMenu();showPage('about')">About</a>
+  <a onclick="toggleMenu();showPage('projects')">Projects</a>
+  <a onclick="toggleMenu();showPage('careers')">Careers</a>
+  <a class="nav-cta" onclick="toggleMenu();showPage('contact')">Get in Touch &rarr;</a>
+</div>
+
+<!-- HOME PAGE -->
+<div id="page-home">
+
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        <span class="badge-text">Consulting MEP Engineers &middot; Goa &amp; Maharashtra</span>
+      </div>
+      <h1 class="hero-h">Building Systems<br>Done <span class="accent">Right.</span></h1>
+      <p class="hero-p">From concept design to site commissioning &mdash; Trilateral delivers precision MEP engineering for residential, commercial, institutional, and industrial projects.</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" onclick="showPage('contact')">Start a Project &rarr;</a>
+        <a class="btn btn-outline" onclick="showPage('projects')">View Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div><span class="stat-num">40<em>+</em></span><div class="stat-lbl">Projects Delivered</div></div>
+        <div><span class="stat-num">17<em>+</em></span><div class="stat-lbl">Years Combined Exp.</div></div>
+        <div><span class="stat-num">5</span><div class="stat-lbl">Sectors Served</div></div>
+        <div><span class="stat-num">2</span><div class="stat-lbl">States Active</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="service-pill"><div class="pill-icon">&#x1F527;</div><div><div class="pill-name">Plumbing Engineering</div><div class="pill-tag">Water supply, drainage, STP</div></div></div>
+      <div class="service-pill"><div class="pill-icon">&#x1F525;</div><div><div class="pill-name">Fire Fighting &amp; Protection</div><div class="pill-tag">NBC compliant, Fire NOC support</div></div></div>
+      <div class="service-pill"><div class="pill-icon">&#x2744;&#xFE0F;</div><div><div class="pill-name">HVAC &amp; Ventilation</div><div class="pill-tag">VRF, central AC, duct design</div></div></div>
+      <div class="service-pill"><div class="pill-icon">&#x26A1;</div><div><div class="pill-name">Electrical Engineering</div><div class="pill-tag">LV, solar, BMS, energy audit</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about-home">
+  <div class="container">
+    <div class="about-grid">
+      <div style="position:relative;padding-bottom:24px">
+        <div class="about-card">
+          <div class="about-card-label">Our Track Record</div>
+          <div class="exp-row"><span class="exp-num">40+</span><span class="exp-lbl">Projects across Goa &amp; Maharashtra since 2021</span></div>
+          <div class="exp-row"><span class="exp-num">17+</span><span class="exp-lbl">Years combined MEP expertise</span></div>
+          <div class="exp-row"><span class="exp-num">100%</span><span class="exp-lbl">NBC &amp; IS code compliance on every project</span></div>
+          <div class="exp-row"><span class="exp-num">5</span><span class="exp-lbl">Sectors: Residential, Commercial, Hospital, Institutional, Industrial</span></div>
+        </div>
+        <div class="about-badge">NBC &amp; IS<br>Code<br>Compliant</div>
+      </div>
+      <div class="about-copy">
+        <div class="sec-tag">Who We Are</div>
+        <h2 class="sec-title">A Consultancy Built on Precision &amp; Trust</h2>
+        <p>Trilateral Consulting MEP Engineers is a multidisciplinary firm specialising in Mechanical, Electrical, and Plumbing design &mdash; delivering integrated, sustainable building services across Goa and Maharashtra.</p>
+        <p>We combine deep technical expertise with hands-on site experience, from concept through to commissioning. Every system we design is built to perform reliably for decades.</p>
+        <div class="pillars">
+          <div class="pillar"><div class="pillar-dot"></div>Innovation-led design</div>
+          <div class="pillar"><div class="pillar-dot"></div>Energy efficiency focus</div>
+          <div class="pillar"><div class="pillar-dot"></div>Statutory compliance</div>
+          <div class="pillar"><div class="pillar-dot"></div>Timely delivery</div>
+          <div class="pillar"><div class="pillar-dot"></div>Cost-effective solutions</div>
+          <div class="pillar"><div class="pillar-dot"></div>Collaborative approach</div>
+        </div>
+        <div style="margin-top:24px"><button class="btn btn-primary" style="font-size:13px;padding:10px 20px" onclick="showPage('about')">Meet the Team &rarr;</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="sec-tag">What We Do</div>
+    <h2 class="sec-title">Integrated MEP Services</h2>
+    <p class="sec-sub">End-to-end mechanical, electrical, and plumbing consultancy &mdash; designed for performance, built for longevity.</p>
+    <div class="services-grid">
+      <div class="svc-card"><div class="svc-num">01 / PLUMBING</div><span class="svc-icon">&#x1F527;</span><div class="svc-name">Plumbing Engineering</div><div class="svc-desc">Complete water supply, drainage, and sanitation design with full statutory approvals.</div><div class="svc-items"><div class="svc-item">Domestic water supply systems</div><div class="svc-item">Drainage, sewerage &amp; vent design</div><div class="svc-item">STP, ETP &amp; water treatment</div><div class="svc-item">Rainwater harvesting</div></div></div>
+      <div class="svc-card"><div class="svc-num">02 / FIRE PROTECTION</div><span class="svc-icon">&#x1F525;</span><div class="svc-name">Fire Fighting &amp; Protection</div><div class="svc-desc">NBC and Fire NOC-compliant systems to safeguard lives and assets at every scale.</div><div class="svc-items"><div class="svc-item">Automatic sprinkler systems</div><div class="svc-item">Hydrant &amp; hose reel systems</div><div class="svc-item">Fire alarm &amp; detection</div><div class="svc-item">Fire NOC coordination</div></div></div>
+      <div class="svc-card"><div class="svc-num">03 / HVAC</div><span class="svc-icon">&#x2744;&#xFE0F;</span><div class="svc-name">HVAC &amp; Ventilation</div><div class="svc-desc">Energy-efficient climate control ensuring year-round comfort and air quality compliance.</div><div class="svc-items"><div class="svc-item">VRF / VRV &amp; central plant design</div><div class="svc-item">Duct design &amp; airflow analysis</div><div class="svc-item">Smoke control systems</div><div class="svc-item">Energy load optimisation</div></div></div>
+      <div class="svc-card"><div class="svc-num">04 / ELECTRICAL</div><span class="svc-icon">&#x26A1;</span><div class="svc-name">Electrical Engineering</div><div class="svc-desc">Safe, efficient electrical systems from LV distribution to smart building integrations.</div><div class="svc-items"><div class="svc-item">LV power distribution &amp; lighting</div><div class="svc-item">Panel sizing, cable &amp; earthing</div><div class="svc-item">Solar PV &amp; energy auditing</div><div class="svc-item">BMS &amp; smart building systems</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="workflow">
+  <div class="container">
+    <div class="sec-tag">Our Process</div>
+    <h2 class="sec-title">How We Design Your MEP Systems</h2>
+    <p class="sec-sub">A structured, transparent workflow from the first brief to the final commissioning sign-off.</p>
+    <div class="wf-steps">
+      <div class="wf-step"><div class="wf-circle">1</div><div class="wf-name">Site Brief</div><div class="wf-desc">Requirements, regulations &amp; constraints</div></div>
+      <div class="wf-step"><div class="wf-circle">2</div><div class="wf-name">Design Report</div><div class="wf-desc">System overview &amp; client approvals</div></div>
+      <div class="wf-step"><div class="wf-circle">3</div><div class="wf-name">MEP Drawings</div><div class="wf-desc">Schematics, layouts &amp; co-ordination</div></div>
+      <div class="wf-step"><div class="wf-circle">4</div><div class="wf-name">BOQ &amp; Cost</div><div class="wf-desc">Material takeoff &amp; estimation</div></div>
+      <div class="wf-step"><div class="wf-circle">5</div><div class="wf-name">Tendering</div><div class="wf-desc">Docs, specs &amp; contractor selection</div></div>
+      <div class="wf-step"><div class="wf-circle">6</div><div class="wf-name">Site Supervision</div><div class="wf-desc">Installation, bill checks &amp; commissioning</div></div>
+    </div>
+    <div class="wf-deliverables">
+      <div class="wf-del-title">Deliverables at Every Stage</div>
+      <div class="wf-del-grid">
+        <div class="wf-del-card"><div class="wf-del-name"><div class="wf-del-dot"></div>Design Documents</div><div class="wf-del-text">DBR, load calculations, system selection reports, energy analysis, compliance certificates.</div></div>
+        <div class="wf-del-card"><div class="wf-del-name"><div class="wf-del-dot"></div>Drawing Package</div><div class="wf-del-text">Floor plan layouts, schematic diagrams, isometric drawings, co-ordination with civil &amp; arch teams.</div></div>
+        <div class="wf-del-card"><div class="wf-del-name"><div class="wf-del-dot"></div>Commercial Package</div><div class="wf-del-text">Detailed BOQ, rate analysis, technical specs, tender documents, bid evaluation, payment verification.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects-home">
+  <div class="container">
+    <div class="sec-tag">Our Work</div>
+    <h2 class="sec-title">Featured Projects</h2>
+    <p class="sec-sub">40+ projects delivered &mdash; from luxury villas to hospitals and industrial facilities.</p>
+    <div class="proj-grid-home" id="homeGrid"></div>
+    <div class="home-proj-cta" style="margin-top:36px">
+      <button class="btn btn-primary" onclick="showPage('projects')">View Full Portfolio &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="sec-tag">Why Trilateral</div>
+    <h2 class="sec-title">What Sets Us Apart</h2>
+    <p class="sec-sub">From first sketch to final handover &mdash; we go beyond design, we own the outcome.</p>
+    <div class="why-grid">
+      <div class="why-card"><span class="why-icon">&#x1F3AF;</span><div class="why-title">End-to-End Ownership</div><div class="why-text">Design, BOQ, tendering, supervision, and commissioning. One team, full accountability.</div></div>
+      <div class="why-card"><span class="why-icon">&#x1F4D0;</span><div class="why-title">Coordinated Drawings</div><div class="why-text">Our drawings are coordinated with arch &amp; structural plans &mdash; reducing site clashes and costly rework.</div></div>
+      <div class="why-card"><span class="why-icon">&#x2705;</span><div class="why-title">Statutory Expertise</div><div class="why-text">Fire NOC, RERA, and NBC documentation handled &mdash; so your project sails through approvals.</div></div>
+      <div class="why-card"><span class="why-icon">&#x1F33F;</span><div class="why-title">Sustainability Focus</div><div class="why-text">Energy optimisation and solar PV integration built into every design &mdash; lower operating costs long-term.</div></div>
+      <div class="why-card"><span class="why-icon">&#x1F3D7;&#xFE0F;</span><div class="why-title">Site Supervision</div><div class="why-text">We stay on site &mdash; monitoring quality, verifying contractor bills, and ensuring as-built accuracy.</div></div>
+      <div class="why-card"><span class="why-icon">&#x1F91D;</span><div class="why-title">Long-Term Partnership</div><div class="why-text">Clients return project after project because we deliver on our word and stand behind every drawing.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-home">
+  <div class="container">
+    <div class="sec-tag">Get in Touch</div>
+    <h2 class="sec-title">Let's Build Something Great Together</h2>
+    <p class="sec-sub">Ready to start your MEP design? We'd love to hear about your project.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-items">
+          <div class="ci"><div class="ci-icon">&#x1F4E7;</div><div><div class="ci-label">Email</div><div class="ci-val">trilateralmepconsultants@gmail.com</div><div class="ci-sub">We respond within 24 hours</div></div></div>
+          <div class="ci"><div class="ci-icon">&#x1F4DE;</div><div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val">+91 84129 76700</div><div class="ci-sub">Mon&ndash;Sat, 9 AM &ndash; 7 PM</div></div></div>
+          <div class="ci"><div class="ci-icon">&#x1F4CD;</div><div><div class="ci-label">Service Area</div><div class="ci-val">Goa &amp; Maharashtra, India</div><div class="ci-sub">On-site consultation available</div></div></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-title">Send an Enquiry</div>
+        <div class="fgrid2">
+          <div class="fg"><label class="flabel">Your Name *</label><input class="finput" type="text" placeholder="Ravi Naik" id="fname"></div>
+          <div class="fg"><label class="flabel">Company</label><input class="finput" type="text" placeholder="ABC Developers" id="fcompany"></div>
+        </div>
+        <div class="fg"><label class="flabel">Email / Phone *</label><input class="finput" type="text" placeholder="email or +91 XXXXX" id="fcontact"></div>
+        <div class="fg"><label class="flabel">Project Type</label><select class="finput" id="ftype"><option value="">Select...</option><option>Residential Villa</option><option>Apartment Complex</option><option>Hotel / Resort</option><option>Hospital / Healthcare</option><option>Institutional Building</option><option>Industrial Facility</option></select></div>
+        <div class="fg"><label class="flabel">Services Required</label><select class="finput" id="fservice"><option value="">Select...</option><option>Plumbing Engineering</option><option>Fire Fighting &amp; Protection</option><option>HVAC &amp; Ventilation</option><option>Electrical Engineering</option><option>Full MEP Package</option></select></div>
+        <div class="fg"><label class="flabel">Project Brief</label><textarea class="finput" placeholder="Location, size, timeline..." id="fmsg"></textarea></div>
+        <button class="fsub" id="enquiryBtn" onclick="submitEnquiry()">Send Enquiry &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end #page-home -->
+
+<!-- ABOUT PAGE -->
+<div id="page-about" style="display:none">
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">About Trilateral</div>
+    <h1 class="page-hero-h">Engineering Expertise<br>You Can <span>Rely On</span></h1>
+    <p class="page-hero-p">Founded on principles of precision, sustainability, and collaboration &mdash; Trilateral brings together senior MEP expertise with a commitment to delivering every project on time, on budget, and above standard.</p>
+    <div class="page-hero-stats">
+      <div><span class="stat-num">2021</span><div class="stat-lbl">Year Founded</div></div>
+      <div><span class="stat-num">40<em>+</em></span><div class="stat-lbl">Projects Completed</div></div>
+      <div><span class="stat-num">17<em>+</em></span><div class="stat-lbl">Yrs Combined Exp.</div></div>
+      <div><span class="stat-num">2</span><div class="stat-lbl">States: Goa &amp; MH</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="about-page-story">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-text">
+        <div class="sec-tag">Our Story</div>
+        <h2 class="sec-title">Built from Site Experience, Not Just Classrooms</h2>
+        <p>Trilateral Consulting MEP Engineers was founded with a clear purpose &mdash; to fill the gap between paper design and real-world execution. Having spent years on sites across Goa and Maharashtra, our founders Rohan and Gopal Parab saw first-hand how poor MEP coordination created delays, cost overruns, and safety risks.</p>
+        <p>We built Trilateral to do it differently. Every design we produce is co-ordinated with architectural and structural drawings, every system we specify is chosen with long-term performance in mind, and every site we supervise is treated as if it were our own building.</p>
+        <p>Today, we work across luxury residential villas, large apartment complexes, hotel developments, hospitals, government institutional projects, and industrial facilities &mdash; bringing the same rigour and attention to every engagement regardless of scale.</p>
+        <div class="story-values">
+          <div class="value-item"><div class="value-num">01</div><div><div class="value-title">Innovation-Led Design</div><div class="value-desc">We adopt the latest MEP technologies and sustainable practices in every project.</div></div></div>
+          <div class="value-item"><div class="value-num">02</div><div><div class="value-title">Reliability Above All</div><div class="value-desc">Timelines are commitments. We have a proven record of on-time delivery.</div></div></div>
+          <div class="value-item"><div class="value-num">03</div><div><div class="value-title">Partnership Mindset</div><div class="value-desc">We build lasting relationships with architects, developers, and contractors.</div></div></div>
+        </div>
+      </div>
+      <div class="story-visual">
+        <div class="story-card">
+          <div class="story-card-label">Company Milestones</div>
+          <div class="timeline-item"><div class="tl-year">2021</div><div class="tl-desc">Founded in Goa. First institutional project &mdash; Neura Panchayat Building</div></div>
+          <div class="timeline-item"><div class="tl-year">2022</div><div class="tl-desc">Awarded 3 government college hostel projects and GIS Building, Panjim</div></div>
+          <div class="timeline-item"><div class="tl-year">2023</div><div class="tl-desc">Expanded into industrial sector &mdash; Kineco, Chowgule, Perlon Goa</div></div>
+          <div class="timeline-item"><div class="tl-year">2024</div><div class="tl-desc">Crossed 30 active projects; entered Maharashtra with Kineco Excel, Banda</div></div>
+          <div class="timeline-item"><div class="tl-year">2025</div><div class="tl-desc">40+ projects delivered. Active in hospitals, hotels, and large apartments</div></div>
+          <div class="timeline-item"><div class="tl-year">2026</div><div class="tl-desc">Ongoing: Mends Hospital, Calbaro Hotel, Salkar Enclave &amp; more</div></div>
+        </div>
+        <div style="background:var(--light);border-radius:16px;padding:24px;border:1px solid var(--border)">
+          <div style="font-size:11px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:16px">Sectors We Serve</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <span style="background:rgba(232,93,36,0.1);color:var(--orange);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600">&#x1F3E0; Residential</span>
+            <span style="background:rgba(232,93,36,0.1);color:var(--orange);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600">&#x1F3E8; Hospitality</span>
+            <span style="background:rgba(232,93,36,0.1);color:var(--orange);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600">&#x1F3E5; Healthcare</span>
+            <span style="background:rgba(232,93,36,0.1);color:var(--orange);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600">&#x1F3DB;&#xFE0F; Institutional</span>
+            <span style="background:rgba(232,93,36,0.1);color:var(--orange);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600">&#x1F3ED; Industrial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="team-page">
+  <div class="container">
+    <div class="sec-tag">Our Team</div>
+    <h2 class="sec-title">The Experts Behind Every Design</h2>
+    <p class="sec-sub">Senior consultants with deep, specialised expertise &mdash; bringing decades of combined experience to every project.</p>
+    <div class="team-page-grid">
+      <div class="team-full-card">
+        <img src="{{ url_for('static', filename='images/rohan1.png') }}" width="150" height="150" class="profile-img" alt="Rohan Parab">
+        <div class="team-full-name">Rohan Parab</div>
+        <div class="team-full-role">MEP Consultant</div>
+        <div class="team-full-exp">&#x2699;&#xFE0F; 7+ Years in MEP Engineering</div>
+        <div class="team-full-bio">Rohan is an experienced MEP Consultant specialising in HVAC, fire fighting &amp; protection, and plumbing systems. Over 7 years he has built a strong track record of timely delivery on complex, high-value projects for government institutions, commercial spaces, healthcare facilities, and hospitality establishments across Goa and Maharashtra.</div>
+        <div class="team-expertise-title">Core Expertise</div>
+        <div class="team-expertise-grid">
+          <div class="expertise-item"><div class="expertise-dot"></div>HVAC System Design</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>Fire Fighting Systems</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>Plumbing Engineering</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>Fire NOC Compliance</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>AutoCAD / Revit MEP</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>Site Supervision</div>
+        </div>
+        <div class="team-sectors">
+          <div class="team-sectors-title">Sectors</div>
+          <div class="sector-tags">
+            <span class="sector-tag">Government</span><span class="sector-tag">Healthcare</span>
+            <span class="sector-tag">Hospitality</span><span class="sector-tag">Residential</span>
+            <span class="sector-tag">Industrial</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-full-card">
+        <img src="{{ url_for('static', filename='images/gopal1.png') }}" width="150" height="150" class="profile-img" alt="Gopal Parab">
+        <div class="team-full-name">Gopal Parab</div>
+        <div class="team-full-role">Electrical Consultant</div>
+        <div class="team-full-exp">&#x26A1; 10+ Years in Electrical Engineering</div>
+        <div class="team-full-bio">Gopal is a results-oriented Electrical Consultant with over 10 years of experience in MEP consultancy, specialising in the design, supervision, and coordination of electrical systems for a variety of building types. Strong knowledge of national and international electrical codes (IS, IEC) with a commitment to technically sound, cost-effective, and sustainable solutions.</div>
+        <div class="team-expertise-title">Core Expertise</div>
+        <div class="team-expertise-grid">
+          <div class="expertise-item"><div class="expertise-dot"></div>LV Power Distribution</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>Energy Efficiency</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>Solar PV Design</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>BMS Integration</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>IS / IEC Codes</div>
+          <div class="expertise-item"><div class="expertise-dot"></div>DG &amp; UPS Systems</div>
+        </div>
+        <div class="team-sectors">
+          <div class="team-sectors-title">Sectors</div>
+          <div class="sector-tags">
+            <span class="sector-tag">Commercial</span><span class="sector-tag">Healthcare</span>
+            <span class="sector-tag">Industrial</span><span class="sector-tag">Institutional</span>
+            <span class="sector-tag">Hospitality</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><!-- end #page-about -->
+
+<!-- PROJECTS PAGE -->
+<div id="page-projects" style="display:none">
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Our Portfolio</div>
+    <h1 class="page-hero-h">40+ Projects.<br><span>One Standard.</span></h1>
+    <p class="page-hero-p">From single luxury villas to 176-unit apartment complexes, government hospitals to industrial warehouses &mdash; every Trilateral project is delivered with the same rigour and precision.</p>
+    <div class="page-hero-stats">
+      <div><span class="stat-num">6</span><div class="stat-lbl">Villa Projects</div></div>
+      <div><span class="stat-num">6</span><div class="stat-lbl">Apartment Projects</div></div>
+      <div><span class="stat-num">10</span><div class="stat-lbl">Institutional Projects</div></div>
+      <div><span class="stat-num">11</span><div class="stat-lbl">Industrial Projects</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="partners-section">
+  <div class="container">
+    <div class="sec-tag">Trusted Partners</div>
+    <h2 class="sec-title" style="color:#fff">Clients &amp; Partners We've Worked With</h2>
+    <p class="sec-sub">From government bodies to leading private enterprises &mdash; Trilateral has earned the trust of Goa's most respected organisations.</p>
+    <div class="partners-grid">
+      <div class="partner-card">
+        <img src="{{ url_for('static', filename='images/gca.jpeg') }}" width="100" height="100" alt="Goa Cricket Association">
+        <div class="partner-name">Goa Cricket Association</div>
+        <div class="partner-desc">Sports &amp; recreation infrastructure, Goa</div>
+        <div class="partner-sector">Institutional</div>
+      </div>
+      <div class="partner-card">
+        <img src="{{ url_for('static', filename='images/itcg.jpeg') }}" width="100" height="100" alt="Info Tech Corporation of Goa">
+        <div class="partner-name">Info Tech Corporation of Goa</div>
+        <div class="partner-desc">State government IT infrastructure</div>
+        <div class="partner-sector">Government</div>
+      </div>
+      <div class="partner-card">
+        <img src="{{ url_for('static', filename='images/josmo.jpeg') }}"width="100" height="100" alt="Josmo Studio">
+        <div class="partner-name">Josmo Studio</div>
+        <div class="partner-desc">Industrial studio, Pilern IDC</div>
+        <div class="partner-sector">Industrial</div>
+      </div>
+      <div class="partner-card">
+        <img src="{{ url_for('static', filename='images/fomento.jpeg') }}" width="100" height="100" alt="Fomento">
+        <div class="partner-name">Fomento</div>
+        <div class="partner-desc">Leading real estate developer, Goa</div>
+        <div class="partner-sector">Residential</div>
+      </div>
+      <div class="partner-card">
+        <img src="{{ url_for('static', filename='images/tcpl.jpeg') }}" width="100" height="100" alt="TCPL Packaging">
+        <div class="partner-name">TCPL Packaging Limited</div>
+        <div class="partner-desc">Industrial packaging facility</div>
+        <div class="partner-sector">Industrial</div>
+      </div>
+    </div>
+    <div class="partners-note">+ 30 more clients across Goa and Maharashtra</div>
+  </div>
+</div>
+
+<div class="portfolio-section">
+  <div class="container">
+    <div class="sec-tag">All Projects</div>
+    <h2 class="sec-title">Complete Project List</h2>
+    <div class="proj-filters-full">
+      <button class="filt-btn active" onclick="filterFull('all',this)">All (38)</button>
+      <button class="filt-btn" onclick="filterFull('villa',this)">Residential Villas (6)</button>
+      <button class="filt-btn" onclick="filterFull('apartment',this)">Apartments (6)</button>
+      <button class="filt-btn" onclick="filterFull('hotel',this)">Hotels (3)</button>
+      <button class="filt-btn" onclick="filterFull('hospital',this)">Hospitals (4)</button>
+      <button class="filt-btn" onclick="filterFull('institutional',this)">Institutional (10)</button>
+      <button class="filt-btn" onclick="filterFull('industrial',this)">Industrial (11)</button>
+    </div>
+    <div class="proj-count" id="projCount"><strong>38</strong> projects shown</div>
+    <div class="proj-full-grid" id="fullGrid"></div>
+  </div>
+</div>
+</div><!-- end #page-projects -->
+
+<!-- CAREERS PAGE -->
+<div id="page-careers" style="display:none">
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Join Our Team</div>
+    <h1 class="page-hero-h">Build the Future of<br>MEP <span>Engineering.</span></h1>
+    <p class="page-hero-p">We're a fast-growing MEP consultancy looking for passionate engineers who want real responsibility, hands-on site experience, and a team that invests in their growth.</p>
+    <div class="page-hero-stats">
+      <div><span class="stat-num">Goa</span><div class="stat-lbl">Primary Location</div></div>
+      <div><span class="stat-num">Small</span><div class="stat-lbl">Tight-Knit Team</div></div>
+      <div><span class="stat-num">Fast</span><div class="stat-lbl">Career Growth</div></div>
+      <div><span class="stat-num">Real</span><div class="stat-lbl">Project Exposure</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="careers-section">
+  <div class="container">
+    <div class="careers-grid">
+      <div>
+        <div class="sec-tag">Open Positions</div>
+        <h2 class="sec-title">Current Openings</h2>
+        <div style="margin-bottom:32px"></div>
+        <div class="job-list">
+          <div class="job-card featured">
+            <div class="job-header">
+              <div><div class="job-title">Junior MEP Design Engineer</div><div class="job-dept">Mechanical &middot; Plumbing &middot; Fire Protection</div></div>
+              <span class="job-type-badge badge-full">Full-Time</span>
+            </div>
+            <div class="job-desc">Join Rohan's team to work on HVAC, plumbing, and fire protection designs for residential, hotel, and hospital projects across Goa. You'll learn AutoCAD/Revit MEP workflows, assist with load calculations, and attend site visits for real-world exposure.</div>
+            <div class="job-tags"><span class="job-tag">AutoCAD</span><span class="job-tag">Revit MEP</span><span class="job-tag">HVAC</span><span class="job-tag">Fire Systems</span><span class="job-tag">Plumbing</span></div>
+            <div class="job-footer"><span class="job-loc">&#x1F4CD; Goa (On-site + site visits)</span><button class="apply-btn" onclick="prefillJob('Junior MEP Design Engineer')">Apply Now &rarr;</button></div>
+          </div>
+          <div class="job-card">
+            <div class="job-header">
+              <div><div class="job-title">Electrical Design Engineer</div><div class="job-dept">Electrical Engineering</div></div>
+              <span class="job-type-badge badge-full">Full-Time</span>
+            </div>
+            <div class="job-desc">Work alongside Gopal on LV electrical system design, panel layouts, cable sizing, and BMS integrations for commercial, industrial, and institutional projects. Exposure to solar PV projects and energy audits is a bonus.</div>
+            <div class="job-tags"><span class="job-tag">LV Electrical</span><span class="job-tag">AutoCAD</span><span class="job-tag">IS/IEC Codes</span><span class="job-tag">Panel Design</span><span class="job-tag">Solar PV</span></div>
+            <div class="job-footer"><span class="job-loc">&#x1F4CD; Goa (On-site + site visits)</span><button class="apply-btn" onclick="prefillJob('Electrical Design Engineer')">Apply Now &rarr;</button></div>
+          </div>
+          <div class="job-card">
+            <div class="job-header">
+              <div><div class="job-title">MEP Site Supervisor</div><div class="job-dept">Site Execution</div></div>
+              <span class="job-type-badge badge-contract">Contract</span>
+            </div>
+            <div class="job-desc">Monitor on-site MEP installation for our active projects. Check contractor work against drawings, flag snags, verify bill quantities, and report progress. Ideal for experienced site engineers who know how MEP systems go in on the ground.</div>
+            <div class="job-tags"><span class="job-tag">Site Management</span><span class="job-tag">MEP Systems</span><span class="job-tag">Quality Control</span><span class="job-tag">Bill Checking</span></div>
+            <div class="job-footer"><span class="job-loc">&#x1F4CD; Multiple sites, Goa</span><button class="apply-btn" onclick="prefillJob('MEP Site Supervisor')">Apply Now &rarr;</button></div>
+          </div>
+          <div class="job-card">
+            <div class="job-header">
+              <div><div class="job-title">MEP Engineering Intern</div><div class="job-dept">All Disciplines</div></div>
+              <span class="job-type-badge badge-intern">Internship</span>
+            </div>
+            <div class="job-desc">Final-year or recent BE/B.Tech graduates in Mechanical or Electrical Engineering. Get real project exposure &mdash; work on active MEP drawings, attend site visits, assist with BOQ preparation, and learn from senior consultants. Duration: 3&ndash;6 months.</div>
+            <div class="job-tags"><span class="job-tag">B.E / B.Tech</span><span class="job-tag">Mechanical or Electrical</span><span class="job-tag">AutoCAD basics</span><span class="job-tag">Freshers welcome</span></div>
+            <div class="job-footer"><span class="job-loc">&#x1F4CD; Goa</span><button class="apply-btn" onclick="prefillJob('MEP Engineering Intern')">Apply Now &rarr;</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="careers-sidebar">
+        <div class="apply-form-card">
+          <div class="apply-form-title">Apply Now</div>
+          <div class="apply-form-sub">Fill in your details and we'll get back to you within 2&ndash;3 working days.</div>
+          <div class="fg-light"><label class="flabel-dark">Full Name *</label><input class="finput-light" type="text" placeholder="Arjun Desai" id="aname"></div>
+          <div class="fg-light"><label class="flabel-dark">Email Address *</label><input class="finput-light" type="email" placeholder="arjun@example.com" id="aemail"></div>
+          <div class="fg-light"><label class="flabel-dark">Phone Number</label><input class="finput-light" type="tel" placeholder="+91 XXXXX XXXXX" id="aphone"></div>
+          <div class="fg-light">
+            <label class="flabel-dark">Position Applying For *</label>
+            <select class="finput-light" id="aposition">
+              <option value="">Select a role...</option>
+              <option>Junior MEP Design Engineer</option>
+              <option>Electrical Design Engineer</option>
+              <option>MEP Site Supervisor</option>
+              <option>MEP Engineering Intern</option>
+              <option>Other / Open Application</option>
+            </select>
+          </div>
+          <div class="fg-light">
+            <label class="flabel-dark">Years of Experience</label>
+            <select class="finput-light" id="aexp">
+              <option value="">Select...</option>
+              <option>Fresher (0 years)</option>
+              <option>1&ndash;2 years</option>
+              <option>3&ndash;5 years</option>
+              <option>5+ years</option>
+            </select>
+          </div>
+          <div class="fg-light"><label class="flabel-dark">Brief Introduction / Cover Note</label><textarea class="finput-light" placeholder="Tell us about yourself and why you'd like to join Trilateral..." id="acover"></textarea></div>
+          <div class="fg-light"><label class="flabel-dark">LinkedIn / Portfolio URL (optional)</label><input class="finput-light" type="url" placeholder="https://linkedin.com/in/..." id="alink"></div>
+          <button class="fsub-dark" id="applyBtn" onclick="submitApplication()">Submit Application &rarr;</button>
+        </div>
+        <div class="why-join">
+          <div class="why-join-title">Why Join Trilateral?</div>
+          <div class="why-join-item"><div class="why-join-dot"></div>Real project exposure from day one</div>
+          <div class="why-join-item"><div class="why-join-dot"></div>Mentorship from senior MEP consultants</div>
+          <div class="why-join-item"><div class="why-join-dot"></div>Diverse project types &mdash; villas to hospitals</div>
+          <div class="why-join-item"><div class="why-join-dot"></div>Site visits and on-ground learning</div>
+          <div class="why-join-item"><div class="why-join-dot"></div>Fast-growing firm with career ownership</div>
+          <div class="why-join-item"><div class="why-join-dot"></div>Collaborative, non-hierarchical culture</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="culture-strip">
+  <div class="container">
+    <div class="sec-tag">Life at Trilateral</div>
+    <h2 class="sec-title">How We Work</h2>
+    <div class="culture-grid">
+      <div class="culture-card"><span class="culture-icon">&#x1F3D7;&#xFE0F;</span><div class="culture-title">Real Projects, Real Responsibility</div><div class="culture-text">No coffee runs. You'll be contributing to live MEP designs and visiting actual sites from early on.</div></div>
+      <div class="culture-card"><span class="culture-icon">&#x1F4DA;</span><div class="culture-title">Learn from the Best</div><div class="culture-text">Work directly with senior consultants who have 7&ndash;10 years of hands-on expertise across every building type.</div></div>
+      <div class="culture-card"><span class="culture-icon">&#x1F334;</span><div class="culture-title">Work in Goa</div><div class="culture-text">Based in one of India's most dynamic real estate and construction markets, with projects across the state.</div></div>
+      <div class="culture-card"><span class="culture-icon">&#x1F4C8;</span><div class="culture-title">Fast Career Growth</div><div class="culture-text">Small team means your contribution is visible. Perform well and you'll take on more responsibility quickly.</div></div>
+    </div>
+  </div>
+</div>
+</div><!-- end #page-careers -->
+
+<!-- CONTACT PAGE -->
+<div id="page-contact" style="display:none">
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-tag">Contact Us</div>
+    <h1 class="page-hero-h">Start Your<br><span>MEP Project</span></h1>
+    <p class="page-hero-p">Tell us about your project and we'll get back to you within 24 hours to discuss how we can help.</p>
+  </div>
+</div>
+<section style="background:var(--dark);padding:72px 32px">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-items">
+          <div class="ci"><div class="ci-icon">&#x1F4E7;</div><div><div class="ci-label">Email</div><div class="ci-val">trilateralmepconsultants@gmail.com</div><div class="ci-sub">We respond within 24 hours</div></div></div>
+          <div class="ci"><div class="ci-icon">&#x1F4DE;</div><div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val">+91 84129 76700</div><div class="ci-sub">Mon&ndash;Sat, 9 AM &ndash; 7 PM</div></div></div>
+          <div class="ci"><div class="ci-icon">&#x1F4CD;</div><div><div class="ci-label">Service Area</div><div class="ci-val">Goa &amp; Maharashtra, India</div>
+          <p class="ci-label">MAHARASHTRA
+FLAT NO A6, LAXMI VISHNU APARTMENT,
+BANDA, SAWANTWADI, SINDHUDURG
+MAHARASHTRA 416511</p>
+          <div class="ci-sub">On-site consultation available</div></div></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="form-title">Send an Enquiry</div>
+        <div class="fgrid2">
+          <div class="fg"><label class="flabel">Name *</label><input class="finput" type="text" placeholder="Ravi Naik" id="cfname"></div>
+          <div class="fg"><label class="flabel">Company</label><input class="finput" type="text" placeholder="ABC Developers" id="cfcompany"></div>
+        </div>
+        <div class="fg"><label class="flabel">Email / Phone *</label><input class="finput" type="text" placeholder="email or +91 XXXXX" id="cfcontact"></div>
+        <div class="fg"><label class="flabel">Project Type</label><select class="finput" id="cftype"><option value="">Select...</option><option>Residential Villa</option><option>Apartment Complex</option><option>Hotel / Resort</option><option>Hospital / Healthcare</option><option>Institutional Building</option><option>Industrial Facility</option></select></div>
+        <div class="fg"><label class="flabel">Services Required</label><select class="finput" id="cfservice"><option value="">Select...</option><option>Full MEP Package</option><option>Plumbing Engineering</option><option>Fire Protection</option><option>HVAC &amp; Ventilation</option><option>Electrical Engineering</option></select></div>
+        <div class="fg"><label class="flabel">Project Brief</label><textarea class="finput" placeholder="Location, floors, size, timeline..." id="cfmsg"></textarea></div>
+        <button class="fsub" id="contactBtn" onclick="submitContact()">Send Enquiry &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+</div><!-- end #page-contact -->
+<div class="map-wrapper">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.0251786526143!2d73.8066531!3d15.5361099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc1af62d4957b%3A0xe781fbf2eb26176a!2sChogm%20Rd%2C%20Sangolda%2C%20Goa!5e0!3m2!1sen!2sin!4v1716300000000!5m2!1sen!2sin" 
+    width="100%" 
+    height="250" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Tri<span>lateral</span> <span style="color:rgba(255,255,255,0.2);font-weight:300">Consulting MEP Engineers</span></div>
+    <div class="footer-copy">&copy; 2025&ndash;26 Trilateral Consulting MEP Engineers. All rights reserved.</div>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('projects')">Projects</a>
+      <a onclick="showPage('careers')">Careers</a>
+      <a onclick="showPage('contact')">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const allProjects=[
+  {n:'Casa Balanca',t:'villa',l:'Moira, Goa',y:'2024\u201325',c:'Residential Villa'},
+  {n:'Nagoa Villas (9 units)',t:'villa',l:'Nagoa, Goa',y:'2023\u201325',c:'Residential Villa'},
+  {n:'AMT Casa Tranquil (27 villas)',t:'villa',l:'Parra, Goa',y:'2023\u201325',c:'Residential Villa'},
+  {n:'Villa at Corjuem',t:'villa',l:'Corjuem, Goa',y:'2023\u201325',c:'Residential Villa'},
+  {n:'Sweeping Plane',t:'villa',l:'Aldona, Goa',y:'2024\u201325',c:'Residential Villa'},
+  {n:'Twin House',t:'villa',l:'Ollaulim, Goa',y:'2023\u201324',c:'Residential Villa'},
+  {n:'Yagna Ocean Cloud',t:'apartment',l:'Altire, Goa',y:'2025\u201326',c:'Apartment'},
+  {n:'Vinay Sachdeva Apartments',t:'apartment',l:'Vagator, Goa',y:'2024\u201325',c:'Apartment'},
+  {n:'Donapaula Service Apts (Menezes)',t:'apartment',l:'Altire, Goa',y:'2023\u201324',c:'Apartment'},
+  {n:'Candolim Apartments (176 units)',t:'apartment',l:'Candolim, Goa',y:'2023\u201325',c:'Apartment'},
+  {n:'GN Legacy',t:'apartment',l:'Ponda, Goa',y:'2024\u201325',c:'Apartment'},
+  {n:'Salkar Enclave',t:'apartment',l:'Bicholim, Goa',y:'2025\u201326',c:'Apartment'},
+  {n:'Calbaro Hotel',t:'hotel',l:'Calangute, Goa',y:'2025\u201326',c:'Hotel'},
+  {n:'Hotel Calangute Towers',t:'hotel',l:'Calangute, Goa',y:'2023\u201325',c:'Hotel'},
+  {n:'Hotel De Alturas',t:'hotel',l:'Candolim, Goa',y:'2023\u201324',c:'Hotel'},
+  {n:'Mends Hospital',t:'hospital',l:'Porvorim, Goa',y:'2025\u201326',c:'Hospital'},
+  {n:'Deendayal Hospital',t:'hospital',l:'Bicholim, Goa',y:'2023\u201324',c:'Hospital'},
+  {n:'Dhulapkar Hospital',t:'hospital',l:'Corlim, Goa',y:'2024\u201325',c:'Hospital'},
+  {n:'Veternity Clinic',t:'hospital',l:'Panjim, Goa',y:'2024\u201325',c:'Hospital / Clinic'},
+  {n:'Directorate Higher Education',t:'institutional',l:'Porvorim, Goa',y:'2022\u201325',c:'Institutional'},
+  {n:'Govt. College Boys Hostel',t:'institutional',l:'Sanquelim, Goa',y:'2022\u201324',c:'Institutional'},
+  {n:'Govt. College Girls Hostel',t:'institutional',l:'Khandola, Goa',y:'2023\u201325',c:'Institutional'},
+  {n:'Govt. College Boys Hostel',t:'institutional',l:'Quepem, Goa',y:'2024\u201325',c:'Institutional'},
+  {n:'Labour & Employment Office',t:'institutional',l:'Patto Panjim, Goa',y:'2023\u201325',c:'Institutional'},
+  {n:'Factories & Boiler Office',t:'institutional',l:'Altinho, Goa',y:'2022\u201325',c:'Institutional'},
+  {n:'Neura Panchayat Building',t:'institutional',l:'Neura, Goa',y:'2021\u201323',c:'Institutional'},
+  {n:'EMC Tuem \u2013 Administrative Building',t:'institutional',l:'Tuem, Goa',y:'2023\u201325',c:'Institutional'},
+  {n:'EMC Tuem \u2013 Fire Station',t:'institutional',l:'Tuem, Goa',y:'2023\u201325',c:'Institutional'},
+  {n:'GIS Building',t:'institutional',l:'Patto Panjim, Goa',y:'2022\u201324',c:'Institutional'},
+  {n:'Kineco Excel',t:'industrial',l:'Banda, Maharashtra',y:'2024\u201325',c:'Industrial'},
+  {n:'Kineco Unit 1, 2 & 3',t:'industrial',l:'Pilern IDC, Goa',y:'2023\u201324',c:'Industrial'},
+  {n:'Mandovi Distilleries & Breweries',t:'industrial',l:'Honda IDC, Goa',y:'2024\u201325',c:'Industrial'},
+  {n:'Chowgule Industries',t:'industrial',l:'Colvale IDC, Goa',y:'2023\u201324',c:'Industrial'},
+  {n:'Tulip Diagnostics PVR Ltd',t:'industrial',l:'Verna IDC, Goa',y:'2022\u201324',c:'Industrial'},
+  {n:'Perlon Goa Pvt Ltd',t:'industrial',l:'Verna IDC, Goa',y:'2023\u201324',c:'Industrial'},
+  {n:'Citron Showroom & Workshop',t:'industrial',l:'Verna IDC, Goa',y:'2023\u201324',c:'Industrial'},
+  {n:'Josmo Studio',t:'industrial',l:'Pilern IDC, Goa',y:'2024\u201325',c:'Industrial'},
+  {n:'Rututek Enterprises',t:'industrial',l:'Madkai IDC, Goa',y:'2023\u201324',c:'Industrial'},
+];
+
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+const pages=['home','about','projects','careers','contact'];
+function showPage(page){
+  pages.forEach(p=>{
+    const el=document.getElementById('page-'+p);
+    if(el) el.style.display=p===page?'block':'none';
+  });
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.classList.remove('active');
+    if(a.id==='nav-'+page||(page==='contact'&&a.id==='nav-contact')) a.classList.add('active');
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(page==='projects') renderFull(allProjects);
+  if(page==='home') renderHome();
+}
+
+function renderHome(){
+  const featured=[0,2,9,15,19,28,29,31];
+  const g=document.getElementById('homeGrid');
+  if(!g) return;
+  g.innerHTML=featured.map(i=>allProjects[i]).filter(Boolean).map(p=>`
+    <div class="proj-card">
+      <div class="proj-type">${p.c}</div>
+      <div class="proj-name">${p.n}</div>
+      <div class="proj-footer">
+        <div class="proj-loc">&#x1F4CD; ${p.l}</div>
+        <div class="proj-yr">${p.y}</div>
+      </div>
+    </div>`).join('');
+}
+
+function renderFull(list){
+  const g=document.getElementById('fullGrid');
+  const c=document.getElementById('projCount');
+  if(!g) return;
+  g.innerHTML=list.map(p=>`
+    <div class="proj-full-card">
+      <div class="proj-full-type">${p.c}</div>
+      <div class="proj-full-name">${p.n}</div>
+      <div class="proj-full-footer">
+        <div class="proj-full-loc">&#x1F4CD; ${p.l}</div>
+        <div class="proj-full-yr">${p.y}</div>
+      </div>
+    </div>`).join('');
+  if(c) c.innerHTML=`<strong>${list.length}</strong> projects shown`;
+}
+
+function filterFull(type,btn){
+  document.querySelectorAll('.filt-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderFull(type==='all'?allProjects:allProjects.filter(p=>p.t===type));
+}
+
+function showToast(msg,success=true){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.style.borderLeftColor=success?'var(--orange)':'#e53e3e';
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),4000);
+}
+
+async function postJSON(url,data){
+  const res=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+  return res.json();
+}
+
+async function submitEnquiry(){
+  const name=document.getElementById('fname').value.trim();
+  const contact=document.getElementById('fcontact').value.trim();
+  if(!name||!contact){showToast('\u26a0\ufe0f Please fill your name and contact.',false);return;}
+  const btn=document.getElementById('enquiryBtn');
+  btn.disabled=true;btn.textContent='Sending\u2026';
+  try{
+    const result=await postJSON('/submit-enquiry',{
+      name,company:document.getElementById('fcompany').value.trim(),
+      contact,type:document.getElementById('ftype').value,
+      message:document.getElementById('fmsg').value.trim()
+    });
+    if(result.status==='ok'){
+      showToast("\u2713 Enquiry received! We'll contact you within 24 hours.");
+      ['fname','fcompany','fcontact','fmsg'].forEach(id=>document.getElementById(id).value='');
+      document.getElementById('ftype').selectedIndex=0;
+      document.getElementById('fservice').selectedIndex=0;
+    } else {showToast('\u26a0\ufe0f Something went wrong. Please try again.',false);}
+  }catch(e){showToast('\u26a0\ufe0f Network error. Please try again.',false);}
+  finally{btn.disabled=false;btn.textContent='Send Enquiry \u2192';}
+}
+
+async function submitContact(){
+  const name=document.getElementById('cfname').value.trim();
+  const contact=document.getElementById('cfcontact').value.trim();
+  if(!name||!contact){showToast('\u26a0\ufe0f Please fill your name and contact.',false);return;}
+  const btn=document.getElementById('contactBtn');
+  btn.disabled=true;btn.textContent='Sending\u2026';
+  try{
+    const result=await postJSON('/submit-enquiry',{
+      name,company:document.getElementById('cfcompany').value.trim(),
+      contact,type:document.getElementById('cftype').value,
+      message:document.getElementById('cfmsg').value.trim()
+    });
+    if(result.status==='ok'){
+      showToast("\u2713 Message sent! We'll be in touch within 24 hours.");
+      ['cfname','cfcompany','cfcontact','cfmsg'].forEach(id=>document.getElementById(id).value='');
+      document.getElementById('cftype').selectedIndex=0;
+      document.getElementById('cfservice').selectedIndex=0;
+    } else {showToast('\u26a0\ufe0f Something went wrong. Please try again.',false);}
+  }catch(e){showToast('\u26a0\ufe0f Network error. Please try again.',false);}
+  finally{btn.disabled=false;btn.textContent='Send Enquiry \u2192';}
+}
+
+async function submitApplication(){
+  const name=document.getElementById('aname').value.trim();
+  const email=document.getElementById('aemail').value.trim();
+  const position=document.getElementById('aposition').value;
+  if(!name||!email||!position){showToast('\u26a0\ufe0f Please fill your name, email, and position.',false);return;}
+  const btn=document.getElementById('applyBtn');
+  btn.disabled=true;btn.textContent='Submitting\u2026';
+  try{
+    const result=await postJSON('/submit-application',{
+      name,email,phone:document.getElementById('aphone').value.trim(),
+      position,experience:document.getElementById('aexp').value,
+      cover:document.getElementById('acover').value.trim(),
+      link:document.getElementById('alink').value.trim()
+    });
+    if(result.status==='ok'){
+      showToast("\u2713 Application submitted! We'll respond in 2\u20133 days.");
+      ['aname','aemail','aphone','acover','alink'].forEach(id=>document.getElementById(id).value='');
+      document.getElementById('aposition').selectedIndex=0;
+      document.getElementById('aexp').selectedIndex=0;
+    } else {showToast('\u26a0\ufe0f Something went wrong. Please try again.',false);}
+  }catch(e){showToast('\u26a0\ufe0f Network error. Please try again.',false);}
+  finally{btn.disabled=false;btn.textContent='Submit Application \u2192';}
+}
+
+function prefillJob(role){
+  const sel=document.getElementById('aposition');
+  if(sel){for(let i=0;i<sel.options.length;i++){if(sel.options[i].value===role){sel.selectedIndex=i;break;}}}
+  document.getElementById('aname').focus();
+  document.querySelector('.careers-sidebar').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+renderHome();
+showPage('home');
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')});},{threshold:.12});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
